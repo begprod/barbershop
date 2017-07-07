@@ -1,0 +1,65 @@
+.menu
+	min-height: 70px
+	background-color: black
+	.wrapper
+		min-height: 70px
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__wrapper
+		float: left
+		margin: 0
+		padding: 0
+		list-style: none
+	&__item
+		position: relative
+		display: inline-block
+		margin: 0 -3px 0 0
+		box-sizing: border-box
+		&--active
+			&::after
+				content: ''
+				position: absolute
+				left: 0
+				right: 0
+				bottom: 0
+				width: 70%
+				height: 4px
+				margin: 0 auto
+				background-color: white
+	&__link
+		display: inline-block
+		padding: 25px 20px
+		line-height: 20px
+		font-size: 16px
+		color: white
+		transition: all .5s ease-in-out
+		&:hover
+			background-color: #242424
+	&__login-link
+		position: relative
+		float: right
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 25px
+			margin-top: -8px
+			display: block
+			width: 20px
+			height: 16px
+			background-image: url('../images/sprites.png')
+			background-position: -24px -69px;
+			transition: all .5s ease-in-out
+		&:hover::before
+			background-position: -52px -69px;
+		a
+			display: inline-block
+			padding: 25px 20px 25px 55px
+			line-height: 20px
+			font-size: 16px
+			color: white
+			transition: all .5s ease-in-out
+			&:hover
+				background-color: #242424
