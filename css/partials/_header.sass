@@ -1,12 +1,9 @@
 .menu
 	min-height: 70px
+	margin: 0 0 65px 0
 	background-color: black
 	.wrapper
 		min-height: 70px
-		&::after
-			content: ''
-			display: table
-			clear: both
 	&__wrapper
 		float: left
 		margin: 0
@@ -45,7 +42,7 @@
 			position: absolute
 			top: 50%
 			left: 25px
-			margin-top: -8px
+			margin: -8px 0 0 0
 			display: block
 			width: 20px
 			height: 16px
@@ -63,3 +60,39 @@
 			transition: all .5s ease-in-out
 			&:hover
 				background-color: #242424
+.main-screen
+	&__logo
+		display: block
+		margin: 0 auto 30px auto
+.advantages
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+	margin: 0 0 65px 0
+	color: white
+	&__unit
+		width: 300px
+		text-align: center
+	&__head
+		position: relative
+		margin: 0 0 35px 0
+		padding: 0 0 45px 0
+		font-size: 30px
+		text-transform: uppercase
+		&::after
+			content: ''
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0
+			display: block
+			width: 20px
+			height: 20px
+			margin: 0 auto
+			background-color: white
+			transform: rotate(45deg)
+	&__text
+		margin: 0
+		padding: 0 25px
