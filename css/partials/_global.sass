@@ -27,6 +27,8 @@ p
 	font-weight: bold
 	a
 		text-decoration: underline
+img
+	max-width: 100%
 input
 	font-family: $mainFont
 	font-size: 14px
@@ -81,7 +83,7 @@ input[type="checkbox"] + label
 	font-weight: bold
 	text-transform: uppercase
 	cursor: pointer
-	transform: all .3s ease-in-out
+	transition: all .3s ease-in-out
 	&:hover
 		color: $brown
 	&::after
@@ -110,7 +112,7 @@ input[type="radio"] + label
 	text-transform: uppercase
 	text-align: left
 	cursor: pointer
-	transform: all .3s ease-in-out
+	transition: all .3s ease-in-out
 	&:hover
 		color: $brown
 	&::after

@@ -18,3 +18,49 @@
 		margin: 0 0 20px 0
 	&__radio
 		margin: 0 0 20px 0
+.products-grid
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: flex-start
+	align-items: flex-start
+	margin: 0 0 35px 0
+	&__unit
+		width: 220px
+		margin: 0 20px 20px 0
+		padding: 20px
+		background-color: white
+		box-shadow: 0 0 10px $gray
+		&:nth-child(3n)
+			margin: 0 0 20px 0
+	&__category
+		display: block
+		font-weight: bold
+	&__name
+		color: black
+	&__cost
+		margin-top: 15px
+		background-color: $grayLight
+		.btn
+			float: right
+			min-width: 65px
+			padding: 10px 10px
+	&__price
+		float: left
+		min-width: 100px
+		padding: 14px 10px
+		font-weight: bold
+		text-align: center
+.pagination
+	margin: 0
+	padding: 0
+	list-style: none
+	&__unit
+		display: inline-block
+		text-align: center
+	&__link
+		min-width: 20px
+		padding: 10px 20px
+		&--active
+			color: black
+			background-color: white
