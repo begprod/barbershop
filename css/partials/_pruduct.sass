@@ -1,0 +1,58 @@
+.product
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	&__left
+		width: 460px
+		margin: 0 60px 0 0
+	&__right
+		width: 400px
+	&__offer
+		display: flex
+		flex-direction: row
+		flex-wrap: nowrap
+		justify-content: space-between
+		align-items: flex-start
+		margin: 0 0 35px 0
+	&__status
+		font-weight: bold
+		text-transform: uppercase
+	&__vendor-code
+		font-weight: bold
+		text-transform: uppercase
+		color: $gray
+	&__descr
+		margin: 0 0 40px 0
+		text-transform: uppercase
+	&__cost
+		display: inline-block
+		vertical-align: top
+		min-width: 190px
+		margin: 0 0 60px 0
+		background-color: $grayLight
+		.btn
+			float: right
+			min-width: 65px
+			padding: 10px 10px
+	&__price
+		float: left
+		min-width: 100px
+		padding: 14px 10px
+		font-weight: bold
+		text-align: center
+	&__head
+		margin: 0 0 35px 0
+		text-transform: uppercase
+.products-images
+	&__img-main
+	&__thumbs
+		display: flex
+		flex-direction: row
+		flex-wrap: nowrap
+		justify-content: space-between
+		align-items: flex-start
+		img
+			display: inline-block
+			max-width: 150px
