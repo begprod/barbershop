@@ -1,24 +1,27 @@
-document.addEventListener('DOMContentLoaded', function() {
-    showPopup();
+$(document).ready(function() {
+    showPopups();
     closePopup();
 });
 
-function showPopup() {
-    var mapTriggerBtn = document.querySelector('.js-show-map');
-    var mapPopup = document.querySelector('.popup--map');
-    if(mapPopup && mapTriggerBtn) {
-        mapTriggerBtn.addEventListener('click', function() {
-            mapPopup.classList.add('popup--active');
-        });
-    }
+
+function showPopups() {
+    var mapTriggerBtn = $('.js-show-map');
+    var mapPopup = $('.popup--map');
+    var loginBtn = $('.js-show-login');
+    var loginForm = $('.popup--login');
+
+    mapTriggerBtn.click(function() {
+        mapPopup.addClass('popup--active');
+    });
+    loginBtn.click(function() {
+        loginForm.addClass('popup--active');
+    });
 }
 
 
 function closePopup() {
-    var closeBtn = document.querySelector('.popup__close');
-    if(closeBtn) {
-        closeBtn.addEventListener('click', function() {
-            this.parentElement.classList.remove('popup--active');
-        });
-    }
+    var closeBtn = $('.popup__close');
+    closeBtn.click(function() {
+        $(this).parent().removeClass('popup--active');
+    });
 }
