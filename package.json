@@ -1,21 +1,21 @@
 {
   "name": "starter-kit",
   "version": "1.0.0",
-  "description": "Starter kit for simple projects",
+  "description": "BarberShop Template",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/begprod/Starter-Kit.git"
+    "url": "git+https://github.com/begprod/barbershop.git"
   },
   "author": "Andrey Aratov [web.andrew@yandex.ru]",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/begprod/Starter-Kit/issues"
+    "url": "https://github.com/begprod/barbershop/issues"
   },
-  "homepage": "https://github.com/begprod/Starter-Kit#readme",
+  "homepage": "https://github.com/begprod/barbershopt#readme",
   "devDependencies": {
     "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
